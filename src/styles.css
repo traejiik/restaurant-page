@@ -15,6 +15,7 @@ body {
 
 /* header */
 header {
+    font-family: "Outfit", Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
