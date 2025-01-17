@@ -14,7 +14,7 @@ function homePage() {
 
     homeContainer.appendChild(hero);
 
-    
+
     // second section
     const about = document.createElement("div");
     about.classList.add("about");
@@ -24,11 +24,30 @@ function homePage() {
     const subAbout2 = document.createElement("div");
     subAbout2.classList.add("about-img");
 
+    // about text
+    const aboutTitle = document.createElement("h3");
+    aboutTitle.textContent = "Hi there!";
+    const aboutText = document.createElement("p");
+    aboutText.textContent = "The right place to indulge in the flavours of african cooking. Come sit in or order online!";
+    const order = document.createElement("button");
+    order.textContent = "Order Now";
+
+    subAbout1.appendChild(aboutTitle);
+    subAbout1.appendChild(aboutText);
+    subAbout1.appendChild(order);
+
+    // about img
+    const abtImg = document.createElement("img");
+    abtImg.src = "./assets/images/rice.jpg";
+
+    subAbout2.appendChild(abtImg);
+
+
+    // append elements
     about.appendChild(subAbout1);
     about.appendChild(subAbout2);
 
     homeContainer.appendChild(about);
-
 
     return homeContainer;
 };
