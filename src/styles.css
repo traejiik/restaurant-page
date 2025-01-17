@@ -13,6 +13,7 @@ body {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,4 +26,31 @@ header {
 nav {
     display: flex;
     gap: 2rem;
+}
+
+
+/* home page */
+.hero {
+    font-family: "Outfit", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    height: 700px;
+    background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 0.75rem;
+}
+
+.about {
+    background-color: rgb(205, 205, 205);
+    height: 600px;
+    color: rgb(0, 0, 0);
 }
