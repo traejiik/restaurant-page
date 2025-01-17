@@ -1,6 +1,6 @@
 import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
-import { aboutPage } from "./about.js";
+import { contentPage } from "./about.js";
 import "./styles.css";
 
 const container = document.getElementById("content");
@@ -9,7 +9,7 @@ container.appendChild(homePage());
 function eventListeners() {
     const homeBtn = document.querySelector(".home");
     const menuBtn = document.querySelector(".menu");
-    const aboutBtn = document.querySelector(".about");
+    const contentBtn = document.querySelector(".content");
     const buttons = document.querySelectorAll(".header-buttons");
 
     homeBtn.addEventListener('click', () => {
@@ -22,9 +22,9 @@ function eventListeners() {
         container.appendChild(menuPage());
     });
     
-    aboutBtn.addEventListener('click', () => {
+    contentBtn.addEventListener('click', () => {
         container.innerHTML = "";
-        container.appendChild(aboutPage());
+        container.appendChild(contentPage());
     });
 
     buttons.forEach(button => {
