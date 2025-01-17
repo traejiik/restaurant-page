@@ -11,7 +11,7 @@ function eventListeners() {
     const aboutBtn = document.querySelector(".about");
 
     homeBtn.addEventListener('click', () => {
-        container.innerHTML = '';
+        container.innerHTML = "";
         container.appendChild(homePage());
     });
     
