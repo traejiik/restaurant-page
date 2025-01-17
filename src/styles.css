@@ -23,9 +23,32 @@ header {
     font-size: 1.4rem;
 }
 
+.branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.branding > img {
+    height: 2rem;
+}
+
 nav {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.header-button {
+    background-color: rgb(1, 13, 34);
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+}
+
+.header-button:hover {
+    border-bottom: 3px solid orange;
 }
 
 
@@ -50,7 +73,7 @@ nav {
 }
 
 .about {
-    background-color: rgb(205, 205, 205);
     height: 600px;
-    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
