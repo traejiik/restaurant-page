@@ -50,6 +50,12 @@ nav {
 
 .header-button:hover {
     border-bottom: 3px solid orange;
+    transition: all 0.5s ease;
+}
+
+.active {
+    border-bottom: 3px solid orange;
+    transition: all 0.5s ease;
 }
 
 
