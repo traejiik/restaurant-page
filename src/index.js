@@ -3,20 +3,28 @@ import { menuPage } from "./menu.js";
 import { aboutPage } from "./about.js";
 
 const container = document.getElementById("content");
-const homeBtn = document.querySelector(".home");
-const menuBtn = document.querySelector(".menu");
-const aboutBtn = document.querySelector(".about");
+container.appendChild(homePage());
 
-homeBtn.addEventListener('click', () => {
-    container.innerHTML = "";
-});
+function eventListeners() {
+    const homeBtn = document.querySelector(".home");
+    const menuBtn = document.querySelector(".menu");
+    const aboutBtn = document.querySelector(".about");
 
-menuBtn.addEventListener('click', () => {
-    container.innerHTML = "";
-});
+    homeBtn.addEventListener('click', () => {
+        container.innerHTML = '';
+        container.appendChild(homePage());
+    });
+    
+    menuBtn.addEventListener('click', () => {
+        container.innerHTML = "";
+        container.appendChild(menuPage());
+    });
+    
+    aboutBtn.addEventListener('click', () => {
+        container.innerHTML = "";
+        container.appendChild(aboutPage());
+    });
+};
 
-aboutBtn.addEventListener('click', () => {
-    container.innerHTML = "";
-});
-
+eventListeners();
 console.log("abcded");
