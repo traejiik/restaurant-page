@@ -1,4 +1,5 @@
 import homeImgSrc from "./assets/images/home-rice.jpg";
+import { menuPage } from "./menu.js";
 
 function homePage() {
     const homeContainer = document.createElement("div");
@@ -33,6 +34,7 @@ function homePage() {
     aboutText.textContent = "The right place to indulge in the flavours of african cooking. Come sit in or order online!";
     const order = document.createElement("button");
     order.textContent = "Order Now";
+    order.classList.add("order-button");
 
     subAbout1.appendChild(aboutTitle);
     subAbout1.appendChild(aboutText);
