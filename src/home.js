@@ -15,8 +15,6 @@ function homePage() {
 
     hero.appendChild(title);
 
-    homeContainer.appendChild(hero);
-
 
     // second section
     const about = document.createElement("div");
@@ -51,6 +49,7 @@ function homePage() {
     about.appendChild(subAbout1);
     about.appendChild(subAbout2);
 
+    homeContainer.appendChild(hero);
     homeContainer.appendChild(about);
 
     return homeContainer;
