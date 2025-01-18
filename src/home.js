@@ -1,4 +1,4 @@
-import homeImgSrc from "./assets/images/rice.jpg";
+import homeImgSrc from "./assets/images/home-rice.jpg";
 
 function homePage() {
     const homeContainer = document.createElement("div");
