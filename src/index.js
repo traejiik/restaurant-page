@@ -22,26 +22,9 @@ function eventListeners() {
         container.appendChild(menuPage());
     });
     
-    contentBtn.addEventListener('click', () => {
+    contactBtn.addEventListener('click', () => {
         container.innerHTML = "";
         container.appendChild(contactPage());
-    });
-
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            buttons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-        });
-    });
-
-    orderBtnListener();
-};
-
-function orderBtnListener() {
-    const orderBtn = document.querySelector(".order-button");
-    orderBtn.addEventListener('click', () => {
-        container.innerHTML =  "";
-        container.appendChild(menuPage());
     });
 };
 
