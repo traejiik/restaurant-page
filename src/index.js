@@ -10,6 +10,7 @@ function eventListeners() {
     const homeBtn = document.querySelector(".home");
     const menuBtn = document.querySelector(".menu");
     const contentBtn = document.querySelector(".content");
+    const orderBtn = document.querySelector(".order-button");
     const buttons = document.querySelectorAll(".header-buttons");
 
     homeBtn.addEventListener('click', () => {
@@ -33,7 +34,11 @@ function eventListeners() {
             button.classList.add('active');
         });
     });
+
+    orderBtn.addEventListener('click', () => {
+        container.innerHTML =  "";
+        container.appendChild(menuPage());
+    });
 };
 
 eventListeners();
-console.log("abcded");
