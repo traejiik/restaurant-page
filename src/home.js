@@ -1,3 +1,5 @@
+import homeImgSrc from "./assets/images/rice.jpg";
+
 function homePage() {
     const homeContainer = document.createElement("div");
     homeContainer.classList.add("container");
@@ -38,7 +40,7 @@ function homePage() {
 
     // about img
     const abtImg = document.createElement("img");
-    abtImg.src = "./assets/images/rice.jpg";
+    abtImg.src = homeImgSrc;
 
     subAbout2.appendChild(abtImg);
 
