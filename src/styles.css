@@ -112,6 +112,10 @@ nav {
     border: none;
 }
 
+.about-text > button:active {
+    filter: brightness(70%);
+}
+
 .about-img > img {
     height: 400px;
     border-radius: 2rem;
