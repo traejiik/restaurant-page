@@ -4,6 +4,8 @@ function menuPage() {
 
     // west section
     const westF = document.createElement("section");
+    const westTitle = document.createElement("h2");
+    westTitle.textContent = "West African Menu";
     const westList = document.createElement("ul");
     for (const meal of westMenu) {
         const menuItm = document.createElement("li");
@@ -25,10 +27,14 @@ function menuPage() {
 
         menuItm.appendChild(img);
         menuItm.appendChild(textCtn);
+
+        westList.appendChild(menuItm);
     }
 
     // south section
     const southF = document.createElement("section");
+    const southTitle = document.createElement("h2");
+    southTitle.textContent = "Southern African Menu";
     const southList = document.createElement("ul");
     for (const meal of southMenu) {
         const menuItm = document.createElement("li");
@@ -50,10 +56,14 @@ function menuPage() {
 
         menuItm.appendChild(img);
         menuItm.appendChild(textCtn);
+
+        southList.appendChild(menuItm);
     }
 
     // east section
     const eastF = document.createElement("section");
+    const eastTitle = document.createElement("h2");
+    eastTitle.textContent = "East African Menu";
     const eastList = document.createElement("ul");
     for (const meal of eastMenu) {
         const menuItm = document.createElement("li");
@@ -75,6 +85,8 @@ function menuPage() {
 
         menuItm.appendChild(img);
         menuItm.appendChild(textCtn);
+
+        eastList.appendChild(menuItm);
     }
 
     // menu objects
@@ -93,13 +105,16 @@ function menuPage() {
 
     // appending
         // to west
-    westF.appendChild();
+    westF.appendChild(westTitle);
+    westF.appendChild(westList);
 
         // to south
-    southF.appendChild();
+    southF.appendChild(southTitle);
+    southF.appendChild(southList);
 
         // to east
-    eastF.appendChild();
+    eastF.appendChild(eastTitle);
+    eastF.appendChild(eastList);
 
         // to container
     menuContainer.appendChild(westF);
