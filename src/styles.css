@@ -11,6 +11,7 @@ body {
     background-color: rgb(1, 13, 34);
     color: white;
     font-family: "Roboto", Helvetica, sans-serif;
+    position: relative;
 }
 
 #content {
@@ -35,6 +36,11 @@ header {
     padding: 0 2rem;
     height: 5rem;
     font-size: 1.4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
 }
 
 .branding {
@@ -150,6 +156,10 @@ section > h2 {
     color: orange;
     font-size: 2rem;
     padding-bottom: 1rem;
+}
+
+section:first-child {
+    margin-top: 7rem;
 }
 
 ul {
