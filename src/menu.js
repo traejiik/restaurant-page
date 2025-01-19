@@ -12,6 +12,67 @@ function menuPage() {
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("container");
 
+    // menu objects
+    const westMenu = [
+        {
+            img: ghJR,
+            name: "Ghanian Jollof Rice",
+            desc: "Ghanaian Jollof Rice is a savory and spicy rice dish cooked in a seasoned tomato base with local spices that give off distinct West African flavors and aroma.",
+            price: "$8"
+        },
+        {
+            img: sChY,
+            name: "Senegalese Chicken Yassa",
+            desc: "Yassa is one of Senegal's favourite dishes",
+            price: "$10"
+        },
+        {
+            img: nChS,
+            name: "Nkaakra Chicken Soup",
+            desc: "Wholesome and warming, the go-to dish on chilly winter days to stave off cold symptoms",
+            price: "$12"
+        }];
+
+    const southMenu = [
+        {
+            img: sSaT,
+            name: "South African Sosatie",
+            desc: "A traditional South African dish of mutton cooked on skewers",
+            price: "$7",
+        },
+        {
+            img: zmGn,
+            name: "Zimbabwean Gango",
+            desc: "A mashup of meat and veggies in one plate",
+            price: "$9",
+        },
+        {
+            img: dKgb,
+            name: "Dikgobe",
+            desc: "Samp and beans cooked together",
+            price: "$5",
+        }];
+
+    const eastMenu = [
+        {
+            img: kCh,
+            name: "Kachumbari",
+            desc: "A fresh tomato and onion salad relish",
+            price: "$5",
+        },
+        {
+            img: chP,
+            name: "Chapati",
+            desc: "Made using a soft dough comprising wheat flour and water. Comes with a side of beef or chicken stew",
+            price: "$8",
+        },
+        {
+            img: eBtb,
+            name: "Ethiopian Beef Tibs",
+            desc: "an Ethiopian version of fajitas,  seasoned with berbere spice and spicy awaze paste and served with injera bread for a filling and tasty African supper.",
+            price: "$10",
+        }];
+
     // west section
     const westF = document.createElement("section");
     const westTitle = document.createElement("h2");
@@ -98,68 +159,6 @@ function menuPage() {
 
         eastList.appendChild(menuItm);
     }
-
-    // menu objects
-    const westMenu = [
-        {
-            img: ghJR,
-            name: "Ghanian Jollof Rice",
-            desc: "Ghanaian Jollof Rice is a savory and spicy rice dish cooked in a seasoned tomato base with local spices that give off distinct West African flavors and aroma.",
-            price: "$8"
-        },
-        {
-            img: sChY,
-            name: "Senegalese Chicken Yassa",
-            desc: "Yassa is one of Senegal's favourite dishes",
-            price: "$10"
-        },
-        {
-            img: nChS,
-            name: "Nkaakra Chicken Soup",
-            desc: "Wholesome and warming, the go-to dish on chilly winter days to stave off cold symptoms",
-            price: "$12"
-        }];
-
-    const southMenu = [
-        {
-            img: sSaT,
-            name: "South African Sosatie",
-            desc: "A traditional South African dish of mutton cooked on skewers",
-            price: "$7",
-        },
-        {
-            img: zmGn,
-            name: "Zimbabwean Gango",
-            desc: "A mashup of meat and veggies in one plate",
-            price: "$9",
-        },
-        {
-            img: dKgb,
-            name: "Dikgobe",
-            desc: "Samp and beans cooked together",
-            price: "$5",
-        }];
-
-    const eastMenu = [
-        {
-            img: kCh,
-            name: "Kachumbari",
-            desc: "A fresh tomato and onion salad relish",
-            price: "$5",
-        },
-        {
-            img: chP,
-            name: "Chapati",
-            desc: "Made using a soft dough comprising wheat flour and water. Comes with a side of beef or chicken stew",
-            price: "$8",
-        },
-        {
-            img: eBtb,
-            name: "Ethiopian Beef Tibs",
-            desc: "an Ethiopian version of fajitas,  seasoned with berbere spice and spicy awaze paste and served with injera bread for a filling and tasty African supper.",
-            price: "$10",
-        }];
-
 
     // appending
         // to west
