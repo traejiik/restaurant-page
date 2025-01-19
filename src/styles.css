@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    gap: 2rem;
 }
 
 /* header */
@@ -131,6 +132,69 @@ nav {
 .about-img > img {
     height: 400px;
     border-radius: 2rem;
+}
+
+/* menu page */
+section {
+    width: 70%;
+    align-self: center;
+    border: 3px solid orange;
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 24px orange;
+    margin-bottom: 2rem;
+}
+
+section > h2 {
+    font-family: "Outfit", Arial, sans-serif;
+    color: orange;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+li {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 300px 3fr;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    gap: 3rem;
+}
+
+li > img {
+    height: 12rem;
+}
+
+li > div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+li h3 {
+    color: orange;
+    padding-bottom: 1rem;
+}
+
+li div > p:last-child {
+    align-self: end;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+li:hover {
+    background-color: white;
+    color: black;
+    transition: 0.7s ease;
 }
 
 /* contact page */
